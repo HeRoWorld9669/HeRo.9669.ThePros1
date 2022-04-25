@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ThePros Webpage</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width =device-width,initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<section id="banner">
+    <img src="images/logo.jpg" class="logo"> 
+    <div class="banner-text">
+        <h1>The Pros</h1>
+        <p> Glad To See You In My Webpage. Hope You Have A Tour.</p>
+        <div class="banner-btn">
+                <a href="https://discord.gg/SfGkpdZbXm";><span></span> Discord Server</a>
+                <a href="Read More.html";><span></span> Read More</a>
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#Portfolio">PORTFOLIO</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menubtn">
+    <img src="images/menu.jpg" id="menu">
+</div>
+<section id="about">
+    <div class="title-text">
+        <p>About </p>
+        <h1> 
+            Want To Know About Me 
+        </h1>
+        <div class="About-text">
+            <div class="About">
+                <div class="About-Image"><img src="images/logo.jpg"></div>
+                    <h1 style="font-size: 50px ;"> ༒IτẓPяȏṭȏ࿐</h1> 
+                    <div class="About-Desc">
+                        <p1 style="font-weight: bold;"> My Self ༒IτẓPяȏṭȏ࿐(Discord IGN ༒IτẓPяȏṭȏ࿐#8787)<br>
+                            This The official website for Itz_Proto gaming youtube channel.
+                           <br> Click Logo Of Social Links To Jump Into It.
+                        </p1>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Portfolio">
+    <div class="portfolio"> 
+        <h1> PORTFOLIO</h1>
+    </div>
+    <div class="Social-Links">
+    <p1>My Social Links Are As Follows</p1>
+
+    <div class="link-icons">
+        <a href="https://www.youtube.com/channel/UCJaoxDDdPfn3UblH1H_WR7A">
+            <ion-icon name="logo-youtube"></ion-icon>       
+        </a>
+    </div>
+    <div class="link-icons1">
+        <a href=" https://discord.gg/c82B5uEEMe">
+            <ion-icon name="logo-discord"></ion-icon>       
+        </a>
+    </div>
+
+
+</section>
+
+    <section id="footer">
+        <p>CopyRights Reserved <a href="https://discord.gg/zct43Ep3"><ion-icon name="at-circle-outline"></ion-icon></a> HeRo.#9669 Discord IGN<br>
+        Click @ To Join My Server </p>
+    </section>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+    menubtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0"; 
+            menu.src = "images/close.jpg";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src = "images/menu.jpg";
+        }
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+
+
+    </body>
+</html>
